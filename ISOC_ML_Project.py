@@ -27,7 +27,7 @@ seq.add(Flatten())
 
 #Step 4-Full Connection
 seq.add(Dense(units=128, activation='relu'))
-seq.add(Dense(units=9, activation='softmax'))
+seq.add(Dense(units=10, activation='softmax'))
 
 #Compiling the CNN
 seq.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
